@@ -1,3 +1,4 @@
 *.swp
 *.swo
 vim/backups/*
+.DS_Store

@@ -13,3 +13,6 @@
 [submodule "vim/plugin/settings/vim-nerdtree-tabs"]
 	path = vim/plugin/settings/vim-nerdtree-tabs
 	url = git://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "vim/bundle/neocompletecache"]
+	path = vim/bundle/neocompletecache
+	url = git://github.com/Shougo/neocomplcache.git
