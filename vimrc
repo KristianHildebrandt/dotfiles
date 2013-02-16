@@ -11,6 +11,11 @@ set showmode "Show current mode down the bottom
 set gcr=a:blinkon0 "Disable cursor blink
 set visualbell "No sounds
 set autoread "Reload files changed outside vim
+let mapleader="," "leader to comma
+set nocompatible "better save than sorry
+set mouse=a "mouse support
+set clipboard+=unnamed
+:imap jj <Esc> " map ESC to jj
 
 " display trailing spaces
 set listchars=tab:>-,trail:.
