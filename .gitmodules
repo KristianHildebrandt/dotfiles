@@ -40,3 +40,18 @@
 [submodule "vim/bundle/vim-powerline"]
 	path = vim/bundle/vim-powerline
 	url = git://github.com/skwp/vim-powerline.git
+[submodule "vim/bundle/endwise"]
+	path = vim/bundle/endwise
+	url = git://github.com/tpope/vim-endwise.git
+[submodule "vim/bundle/vim-rake"]
+	path = vim/bundle/vim-rake
+	url = git://github.com/tpope/vim-rake.git
+[submodule "vim/bundle/vim-ruby"]
+	path = vim/bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+[submodule "vim/bundle/buffergator"]
+	path = vim/bundle/buffergator
+	url = git://github.com/jeetsukumaran/vim-buffergator.git
+[submodule "vim/bundle/easymotion"]
+	path = vim/bundle/easymotion
+	url = git://github.com/Lokaltog/vim-easymotion.git
