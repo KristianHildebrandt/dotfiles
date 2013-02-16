@@ -85,3 +85,6 @@
 [submodule "vim/bundle/vim-textobj-user-rubyblock"]
 	path = vim/bundle/vim-textobj-user-rubyblock
 	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "vim/bundle/matchit"]
+	path = vim/bundle/matchit
+	url = git://github.com/tsaleh/vim-matchit.git

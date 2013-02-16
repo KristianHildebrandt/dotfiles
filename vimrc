@@ -16,6 +16,13 @@ set nocompatible "better save than sorry
 set mouse=a "mouse support
 set clipboard+=unnamed
 :imap jj <Esc> " map ESC to jj
+runtime macros/matchit.vim
+
+" necessaru for textobj-ruby
+set nocompatible
+if has("autocmd")
+  filetype indent plugin on
+endif
 
 " display trailing spaces
 set listchars=tab:>-,trail:.
