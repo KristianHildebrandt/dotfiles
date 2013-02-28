@@ -16,6 +16,7 @@ set nocompatible "better save than sorry
 set mouse=a "mouse support
 set clipboard+=unnamed
 :imap jj <Esc> " map ESC to jj
+
 runtime macros/matchit.vim
 
 " necessaru for textobj-ruby
@@ -60,6 +61,7 @@ set undofile
 
 set autoindent
 set smartindent
+set cindent
 set smarttab
 set shiftwidth=2
 set softtabstop=2

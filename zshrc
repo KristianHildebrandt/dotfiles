@@ -42,3 +42,5 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X1
 export LANG=en_US.UTF-8
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
