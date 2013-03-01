@@ -102,3 +102,8 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=8 "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+
+" fast saving and quitting
+nmap <leader>w :w<cr>
+nmap <leader>wq :wq<cr>
+nmap <leader>q :q<cr>
