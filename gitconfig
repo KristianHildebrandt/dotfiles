@@ -2,6 +2,6 @@
 	name = Kristian Hildebrandt
 	email = hildebrandt.kristian@gmail.com
 [core]
-	editor = vim
+	editor = /usr/bin/vim
 [push]
 	default = matching

@@ -107,3 +107,11 @@ set sidescroll=1
 nmap <leader>w :w<cr>
 nmap <leader>wq :wq<cr>
 nmap <leader>q :q<cr>
+
+" font
+set guifont=Monaco:h12
+
+" zeus plugin
+map <Leader> zc :ZeusConsole<CR>
+map <Leader> zr :ZeusRake spec<CR>
+map <Leader> zg :ZeusGenerate<space>
