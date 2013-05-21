@@ -115,3 +115,12 @@ set guifont=Monaco:h12
 map <Leader> zc :ZeusConsole<CR>
 map <Leader> zr :ZeusRake spec<CR>
 map <Leader> zg :ZeusGenerate<space>
+
+" strip trailing spaces
+autocmd BufWritePre * :%s/\s\+$//e
+
+" switch buffers and tabs
+map <C-J> :bnext<CR>
+map <C-K> :bprev<CR>
+map <C-L> :tabn<CR>
+map <C-H> :tabp<CR>

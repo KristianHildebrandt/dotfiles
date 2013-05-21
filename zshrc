@@ -44,3 +44,9 @@ export LANG=en_US.UTF-8
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
+
+alias v=/Applications/MacVim.app/Contents/MacOS/Vim
+
+export CC=/usr/bin/gcc-4.2
+
+alias Emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
