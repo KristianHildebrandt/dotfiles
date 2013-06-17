@@ -124,3 +124,6 @@ map <C-J> :bnext<CR>
 map <C-K> :bprev<CR>
 map <C-L> :tabn<CR>
 map <C-H> :tabp<CR>
+
+" paste multiple times
+xnoremap p pgvy
