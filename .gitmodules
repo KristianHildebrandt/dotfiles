@@ -72,7 +72,7 @@
 	url = git://github.com/ervandew/supertab.git
 [submodule "vim/bundle/snipmate-snippets"]
 	path = vim/bundle/snipmate-snippets
-	url = git://github.com/honza/snipmate-snippets.git
+	url = git@github.com:scrooloose/snipmate-snippets.git
 [submodule "vim/bundle/snipmate"]
 	path = vim/bundle/snipmate
 	url = git://github.com/honza/snipmate-snippets.git
@@ -118,3 +118,6 @@
 [submodule "vim/bundle/vimux-zeus"]
 	path = vim/bundle/vimux-zeus
 	url = git://github.com/jingweno/vimux-zeus.git
+[submodule "tmux-powerline"]
+	path = tmux-powerline
+	url = https://github.com/erikw/tmux-powerline.git

@@ -109,7 +109,7 @@ nmap <leader>wq :wq<cr>
 nmap <leader>q :q<cr>
 
 " font
-set guifont=Monaco:h12
+set guifont=Monaco:h13
 
 " zeus plugin
 map <Leader> zc :ZeusConsole<CR>
@@ -127,3 +127,10 @@ map <C-H> :tabp<CR>
 
 " paste multiple times
 xnoremap p pgvy
+
+syntax enable
+set background=dark
+colorscheme solarized
+
+set t_Co=256
+let g:Powerline_symbols = 'fancy'
