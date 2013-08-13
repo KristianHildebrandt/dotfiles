@@ -133,4 +133,6 @@ set background=dark
 colorscheme solarized
 
 set t_Co=256
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set fillchars+=stl:\ ,stlnc:\
