@@ -109,7 +109,7 @@ nmap <leader>wq :wq<cr>
 nmap <leader>q :q<cr>
 
 " font
-set guifont=Monaco:h13
+set guifont=Monaco\ for\ Powerline:h12
 
 " zeus plugin
 map <Leader> zc :ZeusConsole<CR>
