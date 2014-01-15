@@ -16,8 +16,10 @@ set nocompatible "better save than sorry
 set mouse=a "mouse support
 set clipboard+=unnamed
 :imap jj <Esc> " map ESC to jj
+set cursorline
 
 runtime macros/matchit.vim
+set guifont=Monaco:h13
 
 " necessaru for textobj-ruby
 set nocompatible
@@ -71,7 +73,7 @@ set expandtab
 filetype plugin on
 filetype indent on
 
-set nowrap "Don't wrap lines
+set wrap "Don't wrap lines
 set linebreak "Wrap lines at convenient points
 
 " ================ Folds ============================
@@ -130,9 +132,7 @@ xnoremap p pgvy
 
 syntax enable
 set background=dark
-colorscheme solarized
 
 set t_Co=256
 "let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
-set fillchars+=stl:\ ,stlnc:\

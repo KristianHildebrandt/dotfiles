@@ -33,12 +33,12 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git osx rails bundler)
-plugins=(git osx)
+plugins=(git osx bundler)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/usr/bin
+export PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/usr/bin:/usr/local/go/bin:/usr/texbin:$HOME/.cabal/bin/
 
 export LANG=en_US.UTF-8
 
@@ -52,5 +52,9 @@ export CC=/usr/bin/gcc-4.2
 
 alias Emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
-set -o vi
 bindkey '^R' history-incremental-search-backward
+
+export GOPATH=$HOME/go
+alias la="ls -ahl"
+alias gen_pdf=./generate_pdf.sh
+setopt No_HIST_VERIFY

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/'
-let g:netrw_dirhist_2='/Users/kristian/code/meg/MegScraper/spec'
-let g:netrw_dirhist_3='/Users/kristian/dotfiles'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/kristian/code/meg/megCMS-km/lib/svg_helper'
+let g:netrw_dirhist_2='/Users/kristian/Downloads/Diplomarbeit---Testgetriebene-Softwareentwicklung-von-...-Ruby-on-Rails-master'
+let g:netrw_dirhist_3='/Users/kristian/uni/bachelor_thesis/thesis/citations.biblatex'
+let g:netrw_dirhist_4='/Users/kristian/code/meg/puppet-manifests/modules/wordpress-server'
