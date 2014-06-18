@@ -127,3 +127,12 @@
 [submodule "vim/bundle/vim-golang"]
 	path = vim/bundle/vim-golang
 	url = git@github.com:jnwhiteh/vim-golang.git
+[submodule "vim/bundle/ag"]
+	path = vim/bundle/ag
+	url = https://github.com/rking/ag.vim
+[submodule "vim/bundle/vim-latex-suite"]
+	path = vim/bundle/vim-latex-suite
+	url = git@github.com:gerw/vim-latex-suite.git
+[submodule "vim/bundle/haproxy"]
+	path = vim/bundle/haproxy
+	url = git@github.com:outsmartin/haproxy.vim.git

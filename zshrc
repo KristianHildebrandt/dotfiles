@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="bira"
+#ZSH_THEME="bira"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -33,7 +33,7 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git osx rails bundler)
-plugins=(git osx bundler)
+plugins=(git osx bundler rails ruby terminalapp)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -42,7 +42,7 @@ export PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/lo
 
 export LANG=en_US.UTF-8
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
 
@@ -58,3 +58,16 @@ export GOPATH=$HOME/go
 alias la="ls -ahl"
 alias gen_pdf=./generate_pdf.sh
 setopt No_HIST_VERIFY
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+function prompt_rvm {
+    rbv=`rvm-prompt`
+    rbv=${rbv#ruby-}
+    [[ $rbv == *"@"* ]] || rbv="${rbv}@default"
+    echo $rbv
+}
+
+PROMPT='%n@%m %~ $(prompt_rvmOMPT='%n@%m %~ $(prompt_rvm)
+
+source /usr/local/bin/virtualenvwrapper.sh
