@@ -1,5 +1,10 @@
+YouCompleteMe
 ctrlp.vim
 neobundle.vim
+nerdtree
+supertab
+ultisnips
 vim-colorschemes
 vim-fugitive
+vim-snippets
 vimshell
