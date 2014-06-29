@@ -3,11 +3,17 @@ ctrlp.vim
 emmet-vim
 neobundle.vim
 nerdtree
+rainbow_parentheses.vim
 supertab
+syntastic
+tagbar
 ultisnips
+vim-airline
 vim-buffergator
 vim-colorschemes
 vim-fugitive
+vim-multiple-cursors
+vim-rails
 vim-snippets
 vim-unimpaired
 vimshell

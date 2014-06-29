@@ -24,6 +24,14 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'mattn/emmet-vim/'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'jeetsukumaran/vim-buffergator'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'majutsushi/tagbar'
+" NeoBundle 'mhinz/vim-startify'
+NeoBundle 'kien/rainbow_parentheses.vim'
+
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
