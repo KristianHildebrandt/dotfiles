@@ -21,6 +21,9 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'ervandew/supertab'
+NeoBundle 'mattn/emmet-vim/'
+NeoBundle 'tpope/vim-unimpaired'
+NeoBundle 'jeetsukumaran/vim-buffergator'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
