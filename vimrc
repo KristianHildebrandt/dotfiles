@@ -36,6 +36,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'justinmk/vim-sneak'
+NeoBundle 'Raimondi/delimitMate'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
