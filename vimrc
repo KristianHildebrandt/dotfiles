@@ -33,9 +33,9 @@ NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'xolox/vim-colorscheme-switcher'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'godlygeek/tabular'
+NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'junegunn/vim-easy-align'
-
+NeoBundle 'justinmk/vim-sneak'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
