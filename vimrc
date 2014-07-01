@@ -26,11 +26,15 @@ NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'jeetsukumaran/vim-buffergator'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'scrooloose/syntastic'
-NeoBundle 'bling/vim-airline'
+NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'majutsushi/tagbar'
-" NeoBundle 'mhinz/vim-startify'
 NeoBundle 'kien/rainbow_parentheses.vim'
+NeoBundle 'xolox/vim-misc'
+NeoBundle 'xolox/vim-colorscheme-switcher'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'junegunn/vim-easy-align'
 
 
 " You can specify revision/branch/tag.
