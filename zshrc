@@ -71,3 +71,16 @@ function prompt_rvm {
 PROMPT='%n@%m %~ $(prompt_rvmOMPT='%n@%m %~ $(prompt_rvm)
 
 source /usr/local/bin/virtualenvwrapper.sh
+
+# Set CLICOLOR if you want Ansi Colors in iTerm2
+export CLICOLOR=1
+
+# Set colors to match iTerm2 Terminal Colors
+export TERM=xterm-256color
+
+push_to_staging() {
+  local branch=`git rev-parse --symbolic-full-name --abbrev-ref HEAD`
+  eval "git push && git checkout staging && git pull && git merge $branch && git push && git checkout $branch"
+}
+
+alias qr='qrcode-terminal'

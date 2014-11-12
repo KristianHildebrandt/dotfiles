@@ -37,6 +37,13 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'justinmk/vim-sneak'
 NeoBundle 'Raimondi/delimitMate'
+NeoBundle 'rodjek/vim-puppet'
+NeoBundle 'valloric/MatchTagAlways'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'outsmartin/haproxy.vim'
+NeoBundle 'scrooloose/nerdcommenter'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }

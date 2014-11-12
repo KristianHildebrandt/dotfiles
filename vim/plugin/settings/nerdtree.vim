@@ -5,4 +5,3 @@ let g:NERDTreeWinSize = 42
 let NERDTreeQuitOnOpen = 1
 
 map sn :NERDTreeToggle<CR>:NERDTreeMirror<CR>
-map nf :NERDTreeFind<CR>

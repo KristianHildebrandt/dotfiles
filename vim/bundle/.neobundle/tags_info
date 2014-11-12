@@ -1,8 +1,11 @@
+MatchTagAlways
 YouCompleteMe
 ctrlp.vim
 delimitMate
 emmet-vim
+haproxy.vim
 neobundle.vim
+nerdcommenter
 nerdtree
 rainbow_parentheses.vim
 supertab
@@ -14,11 +17,15 @@ vim-colorscheme-switcher
 vim-colorschemes
 vim-easy-align
 vim-easymotion
+vim-endwise
 vim-fugitive
+vim-go
 vim-misc
 vim-multiple-cursors
 vim-powerline
+vim-puppet
 vim-rails
+vim-ruby
 vim-sneak
 vim-snippets
 vim-surround
