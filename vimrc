@@ -44,6 +44,10 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'outsmartin/haproxy.vim'
 NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'kana/vim-textobj-user'
+NeoBundle 'nelstrom/vim-textobj-rubyblock'
+
+runtime macros/matchit.vim
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }

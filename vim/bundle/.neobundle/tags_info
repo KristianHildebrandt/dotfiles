@@ -29,5 +29,7 @@ vim-ruby
 vim-sneak
 vim-snippets
 vim-surround
+vim-textobj-rubyblock
+vim-textobj-user
 vim-unimpaired
 vimshell
