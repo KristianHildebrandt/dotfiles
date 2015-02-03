@@ -1,5 +1,6 @@
 MatchTagAlways
 YouCompleteMe
+ag.vim
 ctrlp.vim
 delimitMate
 emmet-vim
@@ -12,6 +13,7 @@ supertab
 syntastic
 tagbar
 ultisnips
+undotree
 vim-buffergator
 vim-colorscheme-switcher
 vim-colorschemes
@@ -20,6 +22,7 @@ vim-easymotion
 vim-endwise
 vim-fugitive
 vim-go
+vim-less
 vim-misc
 vim-multiple-cursors
 vim-powerline

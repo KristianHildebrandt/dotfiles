@@ -46,6 +46,9 @@ NeoBundle 'outsmartin/haproxy.vim'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'nelstrom/vim-textobj-rubyblock'
+NeoBundle 'mbbill/undotree'
+NeoBundle 'rking/ag.vim'
+NeoBundle 'groenewege/vim-less'
 
 runtime macros/matchit.vim
 
