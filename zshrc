@@ -38,7 +38,7 @@ plugins=(git osx bundler rails ruby terminalapp)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/usr/bin:/usr/local/go/bin:/usr/texbin:$HOME/.cabal/bin/
+export PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/usr/bin:/usr/local/go/bin:/usr/texbin:$HOME/.cabal/bin/:/usr/bin
 
 export LANG=en_US.UTF-8
 
@@ -48,7 +48,7 @@ alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
 
 alias v=/Applications/MacVim.app/Contents/MacOS/Vim
 
-export CC=/usr/bin/gcc-4.2
+#export CC=/usr/bin/gcc-4.2
 
 alias Emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
@@ -68,9 +68,7 @@ function prompt_rvm {
     echo $rbv
 }
 
-PROMPT='%n@%m %~ $(prompt_rvmOMPT='%n@%m %~ $(prompt_rvm)
-
-source /usr/local/bin/virtualenvwrapper.sh
+# PROMPT='%n@%m %~ $(prompt_rvmOMPT='%n@%m %~ $(prompt_rvm)
 
 # Set CLICOLOR if you want Ansi Colors in iTerm2
 export CLICOLOR=1

@@ -1,5 +1,4 @@
 MatchTagAlways
-YouCompleteMe
 ag.vim
 ctrlp.vim
 delimitMate
@@ -9,6 +8,7 @@ neobundle.vim
 nerdcommenter
 nerdtree
 rainbow_parentheses.vim
+ri.vim
 supertab
 syntastic
 tagbar

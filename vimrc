@@ -18,7 +18,6 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
-NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'mattn/emmet-vim/'
@@ -49,6 +48,7 @@ NeoBundle 'nelstrom/vim-textobj-rubyblock'
 NeoBundle 'mbbill/undotree'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'groenewege/vim-less'
+NeoBundle 'danchoi/ri.vim'
 
 runtime macros/matchit.vim
 
