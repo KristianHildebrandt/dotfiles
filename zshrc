@@ -1,84 +1,127 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/khildebrandt/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="bira"
+ZSH_THEME="bira"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Set to this to use case-sensitive completion
+# Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Comment this out to disable bi-weekly auto-update checks
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
-# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
+# Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
 
-# Uncomment following line if you want to disable colors in ls
+# Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
-# Uncomment following line if you want to disable autosetting terminal title.
+# Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
-# Uncomment following line if you want red dots to be displayed while waiting for completion
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-#plugins=(git osx rails bundler)
-plugins=(git osx bundler rails ruby terminalapp)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git osx bundler rails ruby terminalapp gem)
+
+# User configuration
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/usr/bin:/usr/local/go/bin:/usr/texbin:$HOME/.cabal/bin/:/usr/bin
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
 
-export LANG=en_US.UTF-8
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+
+# custom stuff
 
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
-
 alias v=/Applications/MacVim.app/Contents/MacOS/Vim
+alias b=bundle
 
-#export CC=/usr/bin/gcc-4.2
+export SCALA_HOME=$HOME/scala-2.11.7
+export PATH=$PATH:$SCALA_HOME/bin
+export PATH=$PATH:$HOME/phantomjs-2.0.1-macosx/bin:$HOME/bin
+export PATH=$PATH:$HOME/code/fyber/bin
+export PATH=$PATH:/usr/local/go/bin
 
-alias Emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-
-bindkey '^R' history-incremental-search-backward
-
-export GOPATH=$HOME/go
-alias la="ls -ahl"
-alias gen_pdf=./generate_pdf.sh
-setopt No_HIST_VERIFY
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-function prompt_rvm {
-    rbv=`rvm-prompt`
-    rbv=${rbv#ruby-}
-    [[ $rbv == *"@"* ]] || rbv="${rbv}@default"
-    echo $rbv
+#function run
+run() {
+    number=$1
+    shift
+    for i in `seq $number`; do
+      $@
+    done
 }
 
-# PROMPT='%n@%m %~ $(prompt_rvmOMPT='%n@%m %~ $(prompt_rvm)
+#/usr/local/Cellar/phantomjs182/1.8.2/bin/phantomjs
 
-# Set CLICOLOR if you want Ansi Colors in iTerm2
-export CLICOLOR=1
+LESSPIPE=`which src-hilite-lesspipe.sh`
+export LESSOPEN="| ${LESSPIPE} %s"
+export LESS=' -R -X -F '
 
-# Set colors to match iTerm2 Terminal Colors
-export TERM=xterm-256color
+#export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
+alias fy='cd ~/code/fyber'
+alias gconf='cat ./.git/config'
+alias ytdl='cd ~/code/privat/2yt-downloader && ruby downloader.rb'
+alias fs='bundle exec foreman start'
+alias hb='hub browse'
 
-push_to_staging() {
-  local branch=`git rev-parse --symbolic-full-name --abbrev-ref HEAD`
-  eval "git push && git checkout staging && git pull && git merge $branch && git push && git checkout $branch"
-}
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias qr='qrcode-terminal'
+alias amm='~/bin/amm'
+
+alias rake="noglob rake"

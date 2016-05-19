@@ -1,12 +1,15 @@
+"NeoBundle Scripts-----------------------------
 if has('vim_starting')
-  set nocompatible               " Be iMproved
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
 
   " Required:
-  set runtimepath+=/Users/kristian/.vim/bundle/neobundle.vim/
+  set runtimepath+=/Users/khildebrandt/.vim/bundle/neobundle.vim/
 endif
 
 " Required:
-call neobundle#begin(expand('/Users/kristian/.vim/bundle'))
+call neobundle#begin(expand('/Users/khildebrandt/.vim/bundle'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
@@ -49,6 +52,13 @@ NeoBundle 'mbbill/undotree'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'danchoi/ri.vim'
+NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'tpope/vim-rake'
+NeoBundle 'tpope/vim-projectionist'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'tpope/vim-repeat'
+NeoBundle 'tpope/vim-abolish'
 
 runtime macros/matchit.vim
 
@@ -64,3 +74,14 @@ filetype plugin indent on
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
+
+function! BeginRescueWrap() range
+  execute "normal! gvd"
+  let head = "begin\<CR>"
+  let body = @"
+  let tail = "rescue StandardError => e\<CR>binding.pry\<CR>end\<CR>"
+  execute "normal! i" . head . "\<CR>" . body . "\<CR>" . tail
+endfunction
+
+vnoremap ,bp sbegin<cr><C-R>1rescue StandardError =>e<cr>binding.pry<cr>end<cr>
+
