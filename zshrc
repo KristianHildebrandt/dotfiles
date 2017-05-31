@@ -6,7 +6,7 @@ export ZSH=/Users/khildebrandt/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="bira"
-
+#ZSH_THEME="robbyrussell"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -53,7 +53,7 @@ plugins=(git osx bundler rails ruby terminalapp gem)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -89,7 +89,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # custom stuff
 
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
-alias v=/Applications/MacVim.app/Contents/MacOS/Vim
+alias v=vim
 alias b=bundle
 
 export SCALA_HOME=$HOME/scala-2.11.7
@@ -125,3 +125,9 @@ alias hb='hub browse'
 alias amm='~/bin/amm'
 
 alias rake="noglob rake"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+unsetopt auto_name_dirs
+
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

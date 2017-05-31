@@ -1,4 +1,5 @@
 MatchTagAlways
+Sierra
 ag.vim
 ctrlp.vim
 delimitMate
@@ -11,6 +12,7 @@ rainbow_parentheses.vim
 ri.vim
 supertab
 syntastic
+tabular
 tagbar
 ultisnips
 undotree
@@ -26,6 +28,7 @@ vim-endwise
 vim-fugitive
 vim-go
 vim-less
+vim-markdown
 vim-misc
 vim-multiple-cursors
 vim-powerline
@@ -34,6 +37,7 @@ vim-puppet
 vim-rails
 vim-rake
 vim-repeat
+vim-rubocop
 vim-ruby
 vim-scala
 vim-sneak

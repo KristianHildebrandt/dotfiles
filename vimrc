@@ -59,6 +59,10 @@ NeoBundle 'tpope/vim-projectionist'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-abolish'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'AlessandroYorba/Sierra'
+NeoBundle 'ngmy/vim-rubocop'
 
 runtime macros/matchit.vim
 
